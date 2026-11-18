@@ -1,4 +1,4 @@
-# JobBot — otomasi lamaran kerja
+# FindMyJob — otomasi lamaran kerja
 
 Alur: analisis CV -> cari lowongan (headless=False) -> catat & skor di spreadsheet
 -> ACC manual di Google Sheet -> apply manual (cek sebelum submit).
@@ -74,16 +74,16 @@ ditolak-perusahaan / ditutup.
 ## Otomasi (Windows Task Scheduler)
 
 ```
-schtasks /query | findstr JobBot
+schtasks /query | findstr FindMyJob
 ```
 
-- **JobBot Scraping** — tiap 2 jam, jalankan `jalankan.bat` (scraping 4 situs + sinkron)
-- **JobBot CekACC** — tiap 10 menit, jalankan `cek_acc.bat` (tarik editan dari Google Sheet + notifikasi Windows bila ada lowongan di-ACC)
+- **FindMyJob Scraping** — tiap 2 jam, jalankan `jalankan.bat` (scraping 4 situs + sinkron)
+- **FindMyJob CekACC** — tiap 10 menit, jalankan `cek_acc.bat` (tarik editan dari Google Sheet + notifikasi Windows bila ada lowongan di-ACC)
 
 Hapus task:
 ```
-schtasks /delete /tn "JobBot Scraping" /f
-schtasks /delete /tn "JobBot CekACC" /f
+schtasks /delete /tn "FindMyJob Scraping" /f
+schtasks /delete /tn "FindMyJob CekACC" /f
 ```
 
 Alur: analisis CV → scraping (otomatis, tiap 2 jam) → simpan di Sheet (otomatis) → kamu ACC manual di Google Sheet → notifikasi (otomatis, tiap 10 menit) → apply manual (`apply-semua`). Satu-satunya langkah manual: ACC di Sheet + isi form apply.

@@ -468,7 +468,7 @@ def cmd_tarik(args):
     print(f"[OK] {len(fetched)} baris dibaca, {n} kolom ter-update di lokal")
 
 def main():
-    p = argparse.ArgumentParser(prog="jobbot")
+    p = argparse.ArgumentParser(prog="FindMyJob")
     sub = p.add_subparsers(dest="cmd", required=True)
 
     c = sub.add_parser("profil"); c.add_argument("--cv"); c.set_defaults(fn=cmd_profil)

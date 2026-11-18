@@ -1,10 +1,10 @@
 # Google Sheets sinkronisasi via browser (tanpa API key) — catatan kerja
 
 ## Ringkasan
-JobBot menulis hasil pencarian, review, dan ACC ke **Google Sheet pribadi** dan
+FindMyJob menulis hasil pencarian, review, dan ACC ke **Google Sheet pribadi** dan
 menarik kembali perubahan (acc/tahap) yang diisi manual di Google Docs.
 
-Sheet: set lewat env `JOBBOT_SHEET_URL` (lihat README untuk setup)
+Sheet: set lewat env `FINDMYJOB_SHEET_URL` (lihat README untuk setup)
 
 ## Perintah
 - Kirim seluruh baris lokal ke sheet (clear + paste semuanya):

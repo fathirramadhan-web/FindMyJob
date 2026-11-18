@@ -19,7 +19,7 @@ foreach ($line in $out) {
 if ($total -eq 0) { exit }
 
 $first = $lines[0] -split '\|'
-$title = "JobBot: $total lowongan di-ACC"
+$title = "FindMyJob: $total lowongan di-ACC"
 $msg = "Contoh: $($first[0]) - $($first[1])"
 
 Add-Type -AssemblyName System.Windows.Forms

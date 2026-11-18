@@ -12,7 +12,7 @@ PROFILE_DIR = SESSION_DIR / "browser_profile"
 
 import os
 GSHEET_SHEET_URL = os.environ.get(
-    "JOBBOT_SHEET_URL",
+    "FINDMYJOB_SHEET_URL",
     "https://docs.google.com/spreadsheets/d/<SHEET_ID_ANDA>/edit#gid=0",
 )
 
