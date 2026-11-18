@@ -1,0 +1,9 @@
+{
+  "nama": "Nama Lengkap Anda",
+  "email": "email@anda.com",
+  "telepon": "08xx-xxxx-xxxx",
+  "linkedin": "linkedin.com/in/username-anda",
+  "portfolio": "github.com/username-anda",
+  "cv_file": "cv.pdf",
+  "cover_letter": "Tulis surat lamaran singkat di sini. Nantinya diisi otomatis ke form yang punya textarea cover letter."
+}

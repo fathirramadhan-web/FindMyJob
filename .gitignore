@@ -1,0 +1,23 @@
+# kredensial & session (folder)
+secrets/
+session/
+
+# log & screenshot
+*.log
+*.png
+debug_*.html
+debug_*.png
+debug/
+
+# data lokal (pribadi)
+data/jobs-pipeline.csv
+data/*.xlsx
+data/jobs-pipeline.xlsx
+data/profil.json
+data/cv.pdf
+data/cv.txt
+*.pdf
+*.xlsx
+
+# python
+__pycache__/
